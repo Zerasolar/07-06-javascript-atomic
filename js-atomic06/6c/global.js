@@ -1,10 +1,9 @@
-var correct = true;
-var password = "cortana";
-var answer = prompt("What is your password?")
-if (answer != password){
-  correct = false
+var correct = false
+var secretnumber = 13;
+var answer = prompt("Pick a number?")
+if (answer == secretnumber){
+  correct = true
 }
-
-if (correct === false){
-  alert("You got it wrong it's " + password)
+if (correct === true){
+  prompt("You got it right.")
 }

@@ -1,17 +1,22 @@
 <!doctype HTML>
 <html>
 <head>
-  <title>JS Atomic 06b</title>
-  <script type="text/javascript" src="new_global.js"></script>
+  <title>JS Atomic 06c</title>
+  <script type="text/javascript" src="global.js"></script>
 </head>
 <body>
   
-  <p>true and false part where true == 'true' was wrong. I was kinda surprise and then I remember no '' so it wouldn't equal to each other</p>
+  <h2>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h2>
+  <p>== works better with secret number because it looks over it being a string. Though if you really want exact you should use parseInt() and ===</p>
   
-  <h2>What do you call true and false values</h2>
-  <p>Boolean value</p>
-  <h2>How is true similar or dissimilar from "true"? Can they be used in the same way?</h2>
-  <p>Well "true" is converted to NaN and true is converted to 1. Not really</p>
+  <h2>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?</h2>
+  <p>Well in that case === would be better because it is already as a integer. </p>
+  
+  <h2>What is the difference between == and ===?</h2>
+  <p>Where === is a strict equality operator only consider value equal that have the same type. Lenient equality operator for == tries to convert values of different types before comparing like strict equality.</p>
+  
+  <h2>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
+  <p>Hmmm For me I said === with parseInt because it is exact and no room for errors where the other there are chances that errors could happen.</p>
   
 </body>
 </html>

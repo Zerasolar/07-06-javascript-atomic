@@ -1,17 +1,19 @@
 <!doctype HTML>
 <html>
 <head>
-  <title>JS Atomic 06b</title>
-  <script type="text/javascript" src="new_global.js"></script>
+  <title>JS Atomic 06e</title>
+  <script type="text/javascript" src="global.js"></script>
 </head>
 <body>
   
-  <p>true and false part where true == 'true' was wrong. I was kinda surprise and then I remember no '' so it wouldn't equal to each other</p>
+  <h2>Does it matter what order your if-statements are in?</h2>
+  <p>Not really code wise, but reading wise yes. It can be confusing if you have it out of order</p>
   
-  <h2>What do you call true and false values</h2>
-  <p>Boolean value</p>
-  <h2>How is true similar or dissimilar from "true"? Can they be used in the same way?</h2>
-  <p>Well "true" is converted to NaN and true is converted to 1. Not really</p>
+  <h2>When testing ranges, did you use &&, ||, or something else entirely (e.g. nested if-statements)? If you used &&, why is that a better choice than || (and vice-versa)?</h2>
+  <p>I used && because the person is 15 below and can't go below 0 since there is info for 0</p>
+  
+  <h2>What types of input produce a value of NaN after parsing? Is it important to check for NaN values? Is it possible for a NaN value to trigger any of the other if-statements? If so, how and why?</h2>
+  <p>Well it is an error value. It's short for not a number and it is a number value. Yes it is important to check for NaN values. Hmmm maybe not. Hmmm maybe because it is part of boolean.</p>
   
 </body>
 </html>
